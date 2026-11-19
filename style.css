@@ -205,3 +205,30 @@ h3 { font-size: 1.05rem; margin: 0 0 8px; }
   .cards.three, .talks, .cv-grid { grid-template-columns: 1fr; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
 }
+
+/* ---------- black & white top (nav + hero, above Research Interests) ---------- */
+:root { --bw-black: #0b0b0b; --bw-white: #ffffff; --bw-grey: #a3a3a3; --bw-line: rgba(255,255,255,.18); }
+.topbar { background: var(--bw-black); border-bottom-color: var(--bw-line); }
+.topbar .brand { color: var(--bw-white); }
+.topbar .nav a { color: var(--bw-grey); }
+.topbar .nav a:hover { color: var(--bw-white); }
+.topbar .lang-switch { border-color: var(--bw-line); }
+.topbar .lang-switch button { color: var(--bw-grey); }
+.topbar .lang-switch button.active { background: var(--bw-white); color: var(--bw-black); }
+
+.hero { position: relative; color: var(--bw-white); padding-bottom: 72px; }
+.hero::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw;
+  transform: translateX(-50%); background: var(--bw-black); z-index: -1;
+}
+.hero .eyebrow { color: var(--bw-white); }
+.hero .role { color: var(--bw-grey); }
+.hero .btn { background: var(--bw-white); color: var(--bw-black); }
+.hero .btn:hover { background: var(--bw-grey); color: var(--bw-black); }
+.hero .btn.ghost { background: transparent; color: var(--bw-white); border-color: var(--bw-white); }
+.hero .btn.ghost:hover { background: var(--bw-white); color: var(--bw-black); }
+.hero .avatar { background: #1f1f1f; box-shadow: 0 0 0 8px var(--bw-black), 0 0 0 9px var(--bw-line); }
+.hero .facts { color: var(--bw-grey); }
+.hero .facts b { color: var(--bw-white); }
+.hero .tags > span { background: transparent; color: var(--bw-white); border: 1px solid var(--bw-line); }
+html { overflow-x: hidden; }
