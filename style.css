@@ -232,3 +232,11 @@ h3 { font-size: 1.05rem; margin: 0 0 8px; }
 .hero .facts b { color: var(--bw-white); }
 .hero .tags > span { background: transparent; color: var(--bw-white); border: 1px solid var(--bw-line); }
 html { overflow-x: hidden; }
+
+/* ---------- impact factor badge, prep list, ORCID ---------- */
+.jif { display: inline-block; padding: 0 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-style: normal; font-weight: 600; font-size: .78rem; }
+.pubs.prep li { border-style: dashed; }
+.pubs.prep .ttl { font-weight: 600; color: var(--ink); line-height: 1.4; }
+.jif-note { color: var(--muted); font-size: .82rem; margin: -12px 0 0; }
+.jif-note a, a.orcid { color: var(--indigo); font-weight: 600; margin-left: 6px; }
+a.orcid:hover, .jif-note a:hover { color: var(--accent); }
