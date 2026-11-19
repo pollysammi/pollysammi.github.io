@@ -9,12 +9,14 @@ html[data-lang="en"] span[lang]:not([lang="en"]),
 html[data-lang="zh"] span[lang]:not([lang="zh"]),
 html[data-lang="ko"] span[lang]:not([lang="ko"]) { display: none; }
 
-/* bilingual titles: EN page = English only; 中/한 page = translation + English below */
+/* bilingual titles: EN = English only; 中/한 = English on top, translation below */
 .ttl .tr { display: block; }
-html[data-lang="zh"] .ttl .orig,
-html[data-lang="ko"] .ttl .orig {
-  display: block; margin-top: 3px;
-  font-weight: 400; font-size: .86em; color: var(--muted); font-family: var(--sans);
+html[data-lang="zh"] .ttl,
+html[data-lang="ko"] .ttl { display: flex; flex-direction: column; }
+.ttl .orig { order: -1; }
+html[data-lang="zh"] .ttl .tr,
+html[data-lang="ko"] .ttl .tr {
+  margin-top: 3px; font-weight: 400; font-size: .86em; color: var(--muted);
 }
 
 /* ---------- tokens ---------- */
@@ -253,7 +255,7 @@ a.orcid:hover, .jif-note a:hover { color: var(--accent); }
 #talks .talk.award { border-color: rgba(255,255,255,.45); }
 #talks .talk-year { color: var(--bw-grey); }
 #talks .talk h4 { color: var(--bw-white); }
-#talks .ttl .orig, #talks .meta { color: var(--bw-grey); }
+#talks .ttl .tr, #talks .meta { color: var(--bw-grey); }
 #talks .badge { background: var(--bw-white); color: var(--bw-black); }
 #talks .pdf { border-color: var(--bw-white); color: var(--bw-white); }
 #talks .pdf:hover { background: var(--bw-white); color: var(--bw-black); }
