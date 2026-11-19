@@ -240,3 +240,20 @@ html { overflow-x: hidden; }
 .jif-note { color: var(--muted); font-size: .82rem; margin: -12px 0 0; }
 .jif-note a, a.orcid { color: var(--indigo); font-weight: 600; margin-left: 6px; }
 a.orcid:hover, .jif-note a:hover { color: var(--accent); }
+
+/* ---------- black background: Conference Presentations ---------- */
+#talks { position: relative; color: var(--bw-white); padding-bottom: 72px; margin-top: 72px; }
+#talks::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw;
+  transform: translateX(-50%); background: var(--bw-black); z-index: -1;
+}
+#talks h2::after { background: radial-gradient(circle at 4px 4px, var(--bw-line) 2.2px, transparent 2.6px) 0 0 / 10px 8px repeat-x; }
+#talks .talk { background: #161616; border-color: var(--bw-line); }
+#talks .talk img { border-bottom-color: var(--bw-line); }
+#talks .talk.award { border-color: rgba(255,255,255,.45); }
+#talks .talk-year { color: var(--bw-grey); }
+#talks .talk h4 { color: var(--bw-white); }
+#talks .ttl .orig, #talks .meta { color: var(--bw-grey); }
+#talks .badge { background: var(--bw-white); color: var(--bw-black); }
+#talks .pdf { border-color: var(--bw-white); color: var(--bw-white); }
+#talks .pdf:hover { background: var(--bw-white); color: var(--bw-black); }
