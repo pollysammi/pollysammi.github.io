@@ -1,43 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Resume - [Your Name]</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yongwei (Polly) Li · Smart Textiles Researcher</title>
+  <meta name="description" content="Yongwei (Polly) Li — Ph.D. candidate in Smart Textiles at Hanyang University. Knit-structure functional textiles, wearable triboelectric sensors, and compression-garment biomechanics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>[Your Name]</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>[Personal Introduction]</p>
-        <img src="images/profile.jpg" alt="Profile Picture" style="width:150px;height:150px;">
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>[Project Descriptions]</p>
-        <img src="images/project1.jpg" alt="Project Image" style="width:300px;height:200px;">
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>[Skills List]</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>[Contact Information]</p>
-    </section>
-    <footer>
-        <p>© [Year] [Your Name]. All rights reserved.</p>
-    </footer>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="brand">Y. Li</a>
+    <nav class="nav">
+      <a href="#research"><span lang="en">Research</span><span lang="zh">研究方向</span><span lang="ko">연구 분야</span></a>
+      <a href="#publications"><span lang="en">Publications</span><span lang="zh">论文</span><span lang="ko">논문</span></a>
+      <a href="#projects"><span lang="en">Projects</span><span lang="zh">科研项目</span><span lang="ko">연구 과제</span></a>
+      <a href="#talks"><span lang="en">Presentations</span><span lang="zh">学术发表</span><span lang="ko">학술 발표</span></a>
+      <a href="#cv"><span lang="en">CV</span><span lang="zh">履历</span><span lang="ko">이력</span></a>
+      <a href="#contact"><span lang="en">Contact</span><span lang="zh">联系</span><span lang="ko">연락처</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="zh">中</button>
+      <button data-set-lang="ko">한</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">
+        <span lang="en">Smart Textile Lab · Hanyang University</span>
+        <span lang="zh">汉阳大学 · 智能纺织实验室</span>
+        <span lang="ko">한양대학교 · 스마트텍스타일 연구실</span>
+      </p>
+      <h1>
+        <span lang="en">Yongwei (Polly) Li</span>
+        <span lang="zh">Li Yongwei (Polly)</span>
+        <span lang="ko">리융웨이 (Polly)</span>
+      </h1>
+      <p class="role">
+        <span lang="en">Ph.D. Candidate, Department of Clothing &amp; Textiles · Human-Tech Convergence Program</span>
+        <span lang="zh">博士候选人 · 服装与纺织学系 · 人类-技术融合专业</span>
+        <span lang="ko">박사 수료 · 의류학과 · 휴먼테크융합전공</span>
+      </p>
+      <p class="lead">
+        <span lang="en">I design textiles that sense and support the body — from knit structures that shape clothing pressure, to yarn-based triboelectric sensors that turn movement into signals a machine-learning model can read.</span>
+        <span lang="zh">我研究能够"感知"并"支撑"人体的纺织品——从调控服装压的针织结构，到将人体运动转化为可供机器学习识别信号的纱线型摩擦纳米发电传感器。</span>
+        <span lang="ko">인체를 감지하고 지지하는 텍스타일을 연구합니다. 의복압을 설계하는 니트 구조부터, 인체 동작을 머신러닝이 읽을 수 있는 신호로 바꾸는 원사 기반 마찰전기 센서까지 다룹니다.</span>
+      </p>
+      <div class="hero-links">
+        <a class="btn" href="#publications"><span lang="en">View publications</span><span lang="zh">查看论文</span><span lang="ko">논문 보기</span></a>
+        <a class="btn ghost" href="mailto:pollysammi@hanyang.ac.kr">pollysammi@hanyang.ac.kr</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="avatar">
+        <img src="images/avatar.jpg" alt="Yongwei Li" onerror="this.remove()">
+        <span class="initials">YL</span>
+      </div>
+      <div class="facts">
+        <div><b>MBTI</b> ENFP-T</div>
+        <div class="tags">
+          <span><span lang="en">Perfectionism</span><span lang="zh">完美主义</span><span lang="ko">완벽주의</span></span>
+          <span><span lang="en">Action-oriented</span><span lang="zh">行动力</span><span lang="ko">행동력</span></span>
+          <span><span lang="en">Self-reflection</span><span lang="zh">自我反省</span><span lang="ko">자아성찰</span></span>
+          <span><span lang="en">Challenge-seeking</span><span lang="zh">勇于挑战</span><span lang="ko">도전적</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <h2><span lang="en">Research Interests</span><span lang="zh">研究方向</span><span lang="ko">연구 분야</span></h2>
+    <div class="cards three">
+      <article class="card">
+        <div class="card-num">01</div>
+        <h3><span lang="en">Knit-structure functional textiles</span><span lang="zh">针织结构功能纺织品</span><span lang="ko">니트 구조 기반 기능성 텍스타일</span></h3>
+        <p><span lang="en">Digital knitting (SHIMA SEIKI) to engineer zoned structures — 3D functional socks and knitted knee braces with zone-specific clothing pressure.</span><span lang="zh">利用电脑横机（岛精）设计分区结构——三维功能袜与具有分区服装压的针织护膝。</span><span lang="ko">디지털 편직(SHIMA SEIKI)으로 구간별 구조를 설계 — 3D 기능성 양말, 구간별 의복압을 갖는 니트 무릎 보호대.</span></p>
+      </article>
+      <article class="card">
+        <div class="card-num">02</div>
+        <h3><span lang="en">Wearable triboelectric sensors</span><span lang="zh">可穿戴摩擦纳米发电传感器</span><span lang="ko">웨어러블 마찰전기 센서</span></h3>
+        <p><span lang="en">Textile TENGs from bristle-textured knits and multi-layer core–sheath yarns, paired with machine learning for motion recognition.</span><span lang="zh">基于毛刷状针织结构与多层皮芯纱的纺织 TENG，结合机器学习实现动作识别。</span><span lang="ko">브리슬 니트 구조와 다층 Core–sheath 원사 기반 텍스타일 TENG, 머신러닝 동작 인식과 결합.</span></p>
+      </article>
+      <article class="card">
+        <div class="card-num">03</div>
+        <h3><span lang="en">Biomechanics of compression garments</span><span lang="zh">压力服装的生物力学</span><span lang="ko">압박 의류의 생체역학</span></h3>
+        <p><span lang="en">Clothing pressure, sEMG and dynamic balance — how braces and garments change joint movement, with Sports Science collaborators.</span><span lang="zh">服装压、表面肌电与动态平衡——与运动科学团队合作研究护具和服装如何影响关节运动。</span><span lang="ko">의복압, sEMG, 동적 균형 — 스포츠과학 연구진과 함께 보호대·의류가 관절 움직임에 미치는 영향을 분석.</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <h2><span lang="en">Publications</span><span lang="zh">发表论文</span><span lang="ko">게재 논문</span></h2>
+
+    <h3 class="sub"><span lang="en">First author</span><span lang="zh">第一作者</span><span lang="ko">제1저자</span></h3>
+    <ol class="pubs">
+      <li>
+        <a href="https://pubs.acs.org/doi/10.1021/acsami.4c12041" target="_blank" rel="noopener">3D Bristle-Structured, Knitted-Fabric-Based Triboelectric Sensors for Machine Learning-Based Motion Recognition</a>
+        <div class="venue"><i>ACS Applied Materials &amp; Interfaces</i> · 2024 · <span class="doi">doi:10.1021/acsami.4c12041</span></div>
+      </li>
+      <li>
+        <a href="https://journals.sagepub.com/doi/10.1177/15280837231217118" target="_blank" rel="noopener">Comparison of three-dimensional printed composite fabrics with different surface textures made with digital light processing and fused deposition modeling</a>
+        <div class="authors"><b>Yongwei Li</b>, Jingzhe Sun, Jihyun Bae</div>
+        <div class="venue"><i>Journal of Industrial Textiles</i> · 2023 · <span class="doi">doi:10.1177/15280837231217118</span></div>
+      </li>
+    </ol>
+
+    <h3 class="sub"><span lang="en">Co-author</span><span lang="zh">合著</span><span lang="ko">공동저자</span></h3>
+    <ol class="pubs">
+      <li>
+        <a href="https://www.mdpi.com/1424-8220/26/7/2168" target="_blank" rel="noopener">Study on the Influence of Protector Design on the Biomechanical Characteristics of Knee Joint Movement</a>
+        <div class="venue"><i>Sensors</i> · 2026, 26(7), 2168</div>
+      </li>
+      <li>
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.74753" target="_blank" rel="noopener">Interfacial Polarization Engineering via One-Dimensional Ionic Crystal Fibers for High-Performance Triboelectric and Piezoelectric Nanogenerators</a>
+        <div class="venue"><i>Small</i> · <span class="doi">doi:10.1002/smll.74753</span></div>
+      </li>
+      <li>
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202404737" target="_blank" rel="noopener">Enhanced Positive Charge Performance in Triboelectric Series: Molecular Engineering of Conjugated Mesoporous Fibers for Machine Learning-Based Wearable Sensors</a>
+        <div class="venue"><i>Small</i> · 2024 · <span class="doi">doi:10.1002/smll.202404737</span></div>
+      </li>
+      <li>
+        <a href="https://pubs.acs.org/doi/10.1021/acsomega.3c07460" target="_blank" rel="noopener">Output Performance Enhanced Triboelectric Nanogenerators Induced by Magnetic Ink Trapping Property Act as Wearable Sensors</a>
+        <div class="venue"><i>ACS Omega</i> · <span class="doi">doi:10.1021/acsomega.3c07460</span></div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2><span lang="en">Research Projects</span><span lang="zh">参与科研项目</span><span lang="ko">참여 연구 과제</span></h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">2026 –</div>
+        <div class="what">
+          <h4><span lang="en">Sim-to-Real AI learning of fabric structure–property relations for a garment-type wearable textile-sensor on-device platform</span><span lang="zh">基于织物结构-性能 Sim-to-Real AI 学习的服装型可穿戴织物传感器端侧平台</span><span lang="ko">직물 구조-물성의 Sim-to-Real AI 학습을 통한 의복형 웨어러블 직물센서 온디바이스 플랫폼</span></h4>
+          <p class="meta"><span lang="en">National R&amp;D project</span><span lang="zh">韩国国家研发项目</span><span lang="ko">국가 R&amp;D 과제</span> · RS-2026-25488602</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2025 – 2026</div>
+        <div class="what">
+          <h4><span lang="en">Hybrid AI sensor system based on multi-core–sheath fiber composites</span><span lang="zh">基于多重皮芯结构纤维复合材料的混合人工智能传感系统</span><span lang="ko">다중 Core-sheath 구조 섬유복합체 기반 Hybrid 인공지능센서 시스템 개발</span></h4>
+          <p class="meta"><span lang="en">Hanyang University internal grant</span><span lang="zh">汉阳大学校内项目</span><span lang="ko">한양대 교내과제</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2024 – 2027</div>
+        <div class="what">
+          <h4><span lang="en">International joint research with Xi'an University of Technology</span><span lang="zh">与西安理工大学的国际合作研究</span><span lang="ko">중국 시안이공대 공동연구</span></h4>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022 – 2025</div>
+        <div class="what">
+          <h4><span lang="en">Surface modification and multi-layer textile structure optimization for high-performance garment-type wearable triboelectric nanogenerators</span><span lang="zh">提升服装型可穿戴摩擦纳米发电机性能的纤维表面改性与多层织物结构优化</span><span lang="ko">의복형 웨어러블 마찰전기 나노발전기의 성능 향상을 위한 섬유 소재의 표면 개질 및 다층 텍스타일 구조 최적화 연구</span></h4>
+          <p class="meta"><span lang="en">National Research Foundation of Korea</span><span lang="zh">韩国国家研究基金会</span><span lang="ko">한국연구재단</span> · NRF-2022R1A2C2010760</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022 – 2027</div>
+        <div class="what">
+          <h4><span lang="en">BK21 FOUR research fellow, Human-Tech Convergence Program</span><span lang="zh">BK21 FOUR 研究生，人类-技术融合专业</span><span lang="ko">BK21 FOUR 휴먼테크융합전공 연구생</span></h4>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PRESENTATIONS -->
+  <section id="talks" class="section">
+    <h2><span lang="en">Conference Presentations</span><span lang="zh">学术会议发表</span><span lang="ko">학술대회 발표</span></h2>
+    <div class="talks">
+      <article class="talk">
+        <img src="images/2026-atc18.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2026 · Poster</div>
+          <h4>The 18th Asian Textile Conference (ATC-18)</h4>
+          <p class="meta">BEXCO, Busan · Oct 27–28, 2026</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2025-xian-oral.jpg" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2025 · 2026 · Oral</div>
+          <h4>High flexibility – high rigidity of multi-layer structure suitable for variable stiffness knee pads: The development of composite woven fabrics</h4>
+          <p class="meta">Xi'an University of Technology</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2025-wrist.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2025 · Poster</div>
+          <h4>Assessing Wrist Strain Across Desk Heights with Contact Surface Pressure Sensor</h4>
+          <p class="meta">The Korean Society of Clothing and Textiles</p>
+        </div>
+      </article>
+      <article class="talk award">
+        <img src="images/2024-ankle.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2024 · Poster <span class="badge">Best Poster Award</span></div>
+          <h4>The Effect of Ankle Pressure on Time to Stabilization in Basketball Players with Chronic Ankle Instability — Pilot Study</h4>
+          <p class="meta">Physical Education, Hanyang University</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2024-workwear.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2024 · Poster</div>
+          <h4>Research Proposal: Workwear Design for Workers Engaged in High-Intensity Outdoor Activities</h4>
+          <p class="meta">Physical Education, Hanyang University</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2024-wrinkle.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2024 · Poster</div>
+          <h4>A Study on the Wrinkle Behavior of Digital Virtual Fabric by the Human Body</h4>
+          <p class="meta">Korea Fashion &amp; Costume Design Association</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2024-coresheath.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2024 · Poster</div>
+          <h4>Analysis of Triboelectric Characteristics of Core-sheath Nano Yarn with Different Diameters as Positive Triboelectric Material</h4>
+          <p class="meta">The Society of Fashion &amp; Textile Industry</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2023-ksf-oral.jpg" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2023 · Oral</div>
+          <h4>Analysis of Triboelectric Characteristics of 3D Bristle Structures for Motion Sensing System</h4>
+          <p class="meta">The Korean Fiber Society</p>
+        </div>
+      </article>
+      <article class="talk award">
+        <img src="images/2023-bristle-poster.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2023 · Poster <span class="badge">Best Poster Award</span></div>
+          <h4>Analysis of Triboelectric Property of Bristle-Textured Structure Using Digital Knitting Technology</h4>
+          <p class="meta">The Society of Fashion &amp; Textile Industry</p>
+        </div>
+      </article>
+      <article class="talk">
+        <img src="images/2022-3dprint.png" alt="" onerror="this.remove()">
+        <div class="talk-body">
+          <div class="talk-year">2022 · Poster</div>
+          <h4>Analysis of Adhesive Properties and Printing Properties of 3D Printed Composite Fabric Based on Textile Surface Properties</h4>
+          <p class="meta">The Society of Fashion &amp; Textile Industry</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv" class="section">
+    <h2><span lang="en">Curriculum Vitae</span><span lang="zh">个人履历</span><span lang="ko">이력</span></h2>
+    <div class="cv-grid">
+
+      <div class="cv-block">
+        <h3><span lang="en">Education</span><span lang="zh">教育背景</span><span lang="ko">학력</span></h3>
+        <ul class="plain">
+          <li><span class="yr">2025.02</span><span lang="en">Ph.D. coursework completed — Clothing &amp; Textiles, Hanyang University</span><span lang="zh">博士课程修了 — 汉阳大学 服装与纺织学系</span><span lang="ko">박사 수료 — 한양대학교 의류학과</span></li>
+          <li><span class="yr">2023 – 2025</span><span lang="en">Integrated M.S.–Ph.D. program — Hanyang University</span><span lang="zh">硕博连读 — 汉阳大学</span><span lang="ko">석박사 통합과정 전환 — 한양대학교</span></li>
+          <li><span class="yr">2022 – 2023</span><span lang="en">M.S. program — Clothing &amp; Textiles, Hanyang University</span><span lang="zh">硕士入学 — 汉阳大学 服装与纺织学系</span><span lang="ko">석사 입학 — 한양대학교 의류학과</span></li>
+          <li><span class="yr">2017 – 2021</span><span lang="en">B.S. — Clothing &amp; Textiles, Pusan National University</span><span lang="zh">本科 — 釜山国立大学 服装与纺织学系</span><span lang="ko">학사 — 부산대학교 의류학과</span></li>
+        </ul>
+      </div>
+
+      <div class="cv-block">
+        <h3><span lang="en">Honors &amp; Awards</span><span lang="zh">获奖</span><span lang="ko">수상</span></h3>
+        <ul class="plain">
+          <li><span class="yr">2026</span><span lang="en">Best Presentation Award — Korea Fashion &amp; Costume Design Association</span><span lang="zh">最佳发表奖 — 韩国服装设计学会</span><span lang="ko">우수발표상 — 한국의상디자인학회</span></li>
+          <li><span class="yr">2025</span><span lang="en">Encouragement Award (3rd) — AI-assisted Literature Review Case Competition</span><span lang="zh">鼓励奖（第三名）— AI 辅助文献调研案例大赛</span><span lang="ko">장려상(3등) — AI활용 선행연구조사 사례 공모전</span></li>
+          <li><span class="yr">2024</span><span lang="en">Best Presentation Award — Hanyang Univ. Sports Science Joint Academic Conference</span><span lang="zh">最佳发表奖 — 汉阳大学体育科学本科·研究生联合学术大会</span><span lang="ko">우수발표상 — 한양대 스포츠과학 학부·대학원 공동 학술대회</span></li>
+          <li><span class="yr">2023</span><span lang="en">Best Presentation Award — The Society of Fashion &amp; Textile Industry</span><span lang="zh">最佳发表奖 — 韩国服装产业学会</span><span lang="ko">우수발표상 — 한국의류산업학회</span></li>
+          <li><span class="yr">2022</span><span lang="en">Outstanding Award — Hanyang University</span><span lang="zh">优秀奖 — 汉阳大学</span><span lang="ko">우수상 — 한양대학교</span></li>
+        </ul>
+      </div>
+
+      <div class="cv-block">
+        <h3><span lang="en">Scholarships</span><span lang="zh">奖学金</span><span lang="ko">장학</span></h3>
+        <ul class="plain">
+          <li><span class="yr">2022 – 2026</span>BK21 FOUR — Hanyang Univ.</li>
+          <li><span class="yr">2022 – 2024</span><span lang="en">Teaching Assistant Scholarship, College of Human Ecology — Hanyang Univ.</span><span lang="zh">教学助教奖学金（生活科学大学）— 汉阳大学</span><span lang="ko">교육전담조교 장학금(생활과학대학) — 한양대</span></li>
+          <li><span class="yr">2022 – 2023</span><span lang="en">International Graduate Scholarship (STEM) — Hanyang Univ.</span><span lang="zh">理工科外国人奖学金 — 汉阳大学</span><span lang="ko">이공계 외국인 장학금 — 한양대</span></li>
+          <li><span class="yr">2017 – 2021</span><span lang="en">International Student Scholarships (incl. TOPIK Scholarship, 2021) — Pusan National Univ.</span><span lang="zh">外国留学生奖学金（含 2021 TOPIK 奖学金）— 釜山国立大学</span><span lang="ko">외국인 유학생 장학금 (2021 TOPIK 장학금 포함) — 부산대</span></li>
+        </ul>
+      </div>
+
+      <div class="cv-block">
+        <h3><span lang="en">Skills &amp; Equipment</span><span lang="zh">技能与设备</span><span lang="ko">기술 및 장비</span></h3>
+        <div class="chips">
+          <span>Digital knitting (SHIMA SEIKI)</span><span>Weaving</span><span>3D printing (DLP · FDM)</span><span>3D scanning</span><span>Electrospinning</span><span>Laser cutting</span><span>Digital textile printing</span><span>sEMG (Noraxon)</span><span>Tensile testing</span><span>Keithley 6514 · Oscilloscope</span><span>Python</span><span>Arduino</span><span>Rhino</span><span>CLO 3D</span><span>Illustrator · Photoshop</span>
+        </div>
+        <h3 class="mt"><span lang="en">Languages</span><span lang="zh">语言</span><span lang="ko">언어</span></h3>
+        <ul class="plain">
+          <li><span lang="en">Chinese (Mandarin, Cantonese) — native</span><span lang="zh">中文（普通话、粤语）— 母语</span><span lang="ko">중국어(보통화·광둥어) — 원어민</span></li>
+          <li><span lang="en">Korean — TOPIK Level 5</span><span lang="zh">韩语 — TOPIK 5 级</span><span lang="ko">한국어 — TOPIK 5급</span></li>
+          <li><span lang="en">English — working proficiency</span><span lang="zh">英语 — 工作水平</span><span lang="ko">영어 — 업무 가능</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2><span lang="en">Contact</span><span lang="zh">联系方式</span><span lang="ko">연락처</span></h2>
+    <p>
+      <span lang="en">Open to collaboration on smart textiles, wearable sensing, and garment biomechanics.</span>
+      <span lang="zh">欢迎在智能纺织、可穿戴传感与服装生物力学领域开展合作。</span>
+      <span lang="ko">스마트 텍스타일, 웨어러블 센싱, 의류 생체역학 분야의 협업을 환영합니다.</span>
+    </p>
+    <a class="email" href="mailto:pollysammi@hanyang.ac.kr">pollysammi@hanyang.ac.kr</a>
+    <p class="meta">
+      <span lang="en">Smart Textile Lab, Dept. of Clothing &amp; Textiles, Hanyang University, Seoul</span>
+      <span lang="zh">首尔 · 汉阳大学 服装与纺织学系 智能纺织实验室</span>
+      <span lang="ko">서울 · 한양대학교 의류학과 스마트텍스타일 연구실</span>
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Yongwei (Polly) Li</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
