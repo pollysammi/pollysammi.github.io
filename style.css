@@ -3,6 +3,14 @@ html[data-lang="en"] span[lang]:not([lang="en"]),
 html[data-lang="zh"] span[lang]:not([lang="zh"]),
 html[data-lang="ko"] span[lang]:not([lang="ko"]) { display: none; }
 
+/* bilingual titles: EN page = English only; 中/한 page = translation + English below */
+.ttl .tr { display: block; }
+html[data-lang="zh"] .ttl .orig,
+html[data-lang="ko"] .ttl .orig {
+  display: block; margin-top: 3px;
+  font-weight: 400; font-size: .86em; color: var(--muted); font-family: "Inter", system-ui, sans-serif;
+}
+
 /* ---------- tokens ---------- */
 :root {
   --bg: #f7f4ee;
@@ -154,6 +162,12 @@ h3 { font-size: 1.05rem; margin: 0 0 8px; }
 .talk-year { font-size: .78rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
 .talk h4 { margin: 6px 0 0; font-size: .98rem; line-height: 1.45; }
 .talk.award { border-color: #e8b9ab; }
+.talk-body { display: flex; flex-direction: column; flex: 1; }
+.pdf {
+  align-self: flex-start; margin-top: 12px; padding: 5px 14px; border-radius: 999px;
+  border: 1px solid var(--indigo); font-size: .82rem; font-weight: 600; color: var(--indigo);
+}
+.pdf:hover { background: var(--indigo); color: #fff; }
 .badge { background: var(--accent); color: #fff; padding: 2px 8px; border-radius: 999px; margin-left: 6px; letter-spacing: 0; text-transform: none; }
 
 /* ---------- CV ---------- */
